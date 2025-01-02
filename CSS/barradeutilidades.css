@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1000px;
+  padding: 90px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right, coral, purple);
+}
+
+section {
+  padding: 28px 8%;
+}
+
+#navbar {
+  justify-content: right;
+  width: 100%;
+  align-items: center;
+  border: 1px solid;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 55px;
+  background-color: #fff;
+  z-index: 3;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 10px;
+  justify-content: flex-end;
+  border-radius: 20px 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 13px;
+  width: 100%;
+}
+
+.button {
+  background-color: coral;
+  border-radius: 5px 5px;
+  padding: 15px;
+  width: 105px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin: 120px;
+  cursor: pointer;
+  height: 100%;
+  list-style: none;
+  margin-left: 7px;
+  margin-right: 7px;
+  border: 0.5px solid;
+}
+
+.buttonP {
+  border-bottom: 3px solid coral;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3%;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  height: 17.5px;
+  margin-bottom: 10px;
+}
+.buttonA {
+  border-bottom: 3px solid coral;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  height: 17.5px;
+  margin-bottom: 30px;
+}
+.buttonR {
+  border-bottom: 3px solid coral;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  height: 17.5px;
+  margin-bottom: 13px;
+}
+.buttonS {
+  border-bottom: 3px solid coral;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3%;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  height: 17.5px;
+  margin-bottom: 13px;
+}
+.buttonU {
+  border-bottom: 3px solid coral;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3%;
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+  height: 17.5px;
+  margin-bottom: 13px;
+}
+
+#nav_list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.emblema img {
+  width: 130px;
+  height: 90px;
+  padding: 0px;
+  margin-right: 720px;
+}
+
+.nome {
+  margin-right: 10px;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-start;
+}
+.mob-item a {
+  text-decoration: none;
+  color: seagreen;
+  font-weight: 600;
+}
+
+.mob-item.active a {
+  color: #1d1d1d;
+  border-bottom: 3px solid #605803;
+}
+
+#mobile_btn {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  #nav_list,
+  #navbar .btn-default {
+    display: none;
+  }
+  #mobile_btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.9rem;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+}
+
+#mobile_menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobile_nav_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 0px;
+  list-style: none;
+}
+
+#mobile_nav_list .nav-item {
+  list-style: none;
+  text-align: center;
+}
+
+.social_media_buttons a {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  width: 45px;
+  height: 40px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 10px;
+  color: #1d1d1d;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+  background-color: coral;
+  display: flex;
+}
+
+.social_media_buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.social_media_buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.social_media_buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 450px) {
+  #phone_button button {
+    display: none;
+  }
+}
